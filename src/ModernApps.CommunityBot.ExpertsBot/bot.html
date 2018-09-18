@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        html {
+            background-size: 90%;
+            background-repeat: repeat-y;
+        }
+
+        .chatframe {
+            position: absolute;
+            background-color: white;
+            opacity: 100;
+            float: left;
+            margin-left: 0%;
+            margin-top: 0%;
+            height: 90%;
+            width: 90%;
+            border: 5px #555 solid;
+        }
+
+        .visible {
+            display: inline;
+        }
+
+        .invisible {
+            visibility: hidden
+        }
+    </style>
+    <link href="https://webchat.botframework.com/css/botchat.css" rel="stylesheet" />
+
+</head>
+<body style="font-family:'Segoe UI'">
+
+    <div id="botInner" class="chatframe">
+    </div>
+    <script src="https://webchat.botframework.com/scripts/botchat.js"></script>
+    <script>
+       
+
+        var dl = new BotChat.DirectLine({
+            secret: 'tecNd5A1bko.cwA.pMc.4M4qst-dx2PM0qnDKdUEn7aP4AQT8po19Hta6ruPlAw',
+            webSocket: true
+        });
+
+        var user = { name: 'user' };
+
+        var botConnection = Object.assign({}, dl, {
+            postActivity: activity => {
+                if (activity.channelData) {
+                    activity.channelData.accessToken = accessToken;
+                } else {
+                    activity.channelData = { accessToken: accessToken };
+                }
+                return dl.postActivity(activity);
+            },
+        });
+
+        BotChat.App({
+            botConnection: botConnection,
+            user: user,
+            resize: 'detect',
+            locale: 'en-us'
+        }, document.getElementById("botInner"));
+
+    </script>
+</body>
+</html>
