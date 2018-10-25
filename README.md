@@ -354,7 +354,7 @@ To Configure the bot's NLU model go through the following steps:
 
 1. Go to [www.luis.ai](http://www.luis.ai)
 
-2. Sign in with the bot's credentials - eaibot@outlook.com
+2. Sign in with the bot's credentials
 
 3. Select the resepetive NLU model
 ![Select Model](src/Assets/LuisSelectModel.PNG)
@@ -384,7 +384,7 @@ To edit the knowledge base go through the following steps:
 
 1. Go to [www.qnamaker.ai](http://www.qnamaker.ai)
 
-2. Sign in with the bot's credentials - eaibot@outlook.com
+2. Sign in with the bot's credentials
 
 3. Select the service that holds the Knowledge Base
 ![Select QnA Service](src/Assets/qnaService.PNG)
