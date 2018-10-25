@@ -2,6 +2,8 @@
 The end user/expert bot solution is a 2 bot product that allows the end users to query a knowledge base using natural language.
 If no answer is found on the Knowledge base or if the user thinks that the answer is wrong, a team of experts is contacted using the second bot of the solution.
 
+![Overview](src/Assets/overview.png)
+
 The expert bot allows the team of experts to answer to the end users' questions and to update and improve the knowledge base. All this interaction is also done through the usage of natural language.
 
 This soultion allows for several end user and expert channels, however currently only has been tested for the following:
@@ -352,50 +354,50 @@ To Configure the bot's NLU model go through the following steps:
 
 1. Go to [www.luis.ai](http://www.luis.ai)
 
-2. Sign in with the bot's credentials - eaibot@outlook.com
+2. Sign in with the bot's credentials
 
 3. Select the resepetive NLU model
-![Select Model](/Assets/LuisSelectModel.png)
+![Select Model](src/Assets/LuisSelectModel.PNG)
 
 4. Select the Review Endpoint utterances option
-![Review Endpoint Utterances](/Assets/ReviewEndpointUtterances.png)
+![Review Endpoint Utterances](src/Assets/ReviewEndpointUtterances.PNG)
 
 	1. Select the aligned intent that best suits each utterance
-	![AlignedIntent](/Assets/AlignedIntent.png)
+	![AlignedIntent](src/Assets/AlignedIntent.PNG)
 
 	2. Identify the entities present in the utterance (if any).
 		1. To do so, left click on the first word and then on the last word of the entity and select the entity type
-		![SelectEntities](/Assets/SelectEntities.png)
+		![SelectEntities](src/Assets/SelectEntities.PNG)
 
 	3. Click on the check button (Add to aligned intent)
-	![AddToIntent](/Assets/AddToIntent.png)
+	![AddToIntent](src/Assets/AddToIntent.PNG)
 
 5. After setting the intents and/or the entities train the model (the training will ensure that the new utterances are taken into account);
-![Train](/Assets/Train.png)
+![Train](src/Assets/Train.PNG)
 
 6. Publish the newly trained model (the changes made to the model are only effective once the model is publish)
-![Publish stp 1](/Assets/Publish1.png)
-![Publish step 2](/Assets/Publish2.png)
+![Publish stp 1](src/Assets/Publish1.PNG)
+![Publish step 2](src/Assets/Publish2.PNG)
 
 ## KNOWLEDGE BASE TRAINING
 To edit the knowledge base go through the following steps:
 
 1. Go to [www.qnamaker.ai](http://www.qnamaker.ai)
 
-2. Sign in with the bot's credentials - eaibot@outlook.com
+2. Sign in with the bot's credentials
 
 3. Select the service that holds the Knowledge Base
-![Select QnA Service](/Assets/qnaService.png)
+![Select QnA Service](src/Assets/qnaService.PNG)
 
 4. On this screen you can edit an answer, edit a question, add alternative phrasings, delete a QnA Pair or add a new pair (user the + Add new QnA Pair)
-![Add qna pair](/Assets/addQnaPair.png)
+![Add qna pair](src/Assets/addQnaPair.PNG)
 
 5. After editing the Knowledge Base click on Save and Retrain.
-![Save and retrain](/Assets/SaveRetrain.png)
+![Save and retrain](src/Assets/SaveRetrain.PNG)
 
 6. After the training finishes, publish the updated Knowledge Base
-![Publish step 1](/Assets/qnaPublish1.png)
-![Publish step 2](/Assets/qnaPublish2.png)
+![Publish step 1](src/Assets/qnaPublish1.PNG)
+![Publish step 2](src/Assets/qnaPublish2.PNG)
 
 
 
