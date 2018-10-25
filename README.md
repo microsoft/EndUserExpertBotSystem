@@ -2,6 +2,8 @@
 The end user/expert bot solution is a 2 bot product that allows the end users to query a knowledge base using natural language.
 If no answer is found on the Knowledge base or if the user thinks that the answer is wrong, a team of experts is contacted using the second bot of the solution.
 
+![Overview](src/Assets/overview.png)
+
 The expert bot allows the team of experts to answer to the end users' questions and to update and improve the knowledge base. All this interaction is also done through the usage of natural language.
 
 This soultion allows for several end user and expert channels, however currently only has been tested for the following:
